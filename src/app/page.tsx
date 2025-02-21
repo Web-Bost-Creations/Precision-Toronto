@@ -2,6 +2,8 @@
 
 import { ArrowRight, Code2, Layers, Rocket, Sparkles, Zap, Github, Twitter, Linkedin, Instagram, Menu, X, Shield, Clock, Car } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import Link from 'next/link'; // Import Link
+import Image from 'next/image'; // Import Image
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,9 +39,9 @@ export default function Home() {
         <div className="container mx-auto px-4 relative">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="/" className="relative z-10">
-              <img src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBCpOImVMZM1Z4ly69njxJiYBrqpXWhCFR8z2D" alt="Precision Toronto" className="h-16 w-16" />
-            </a>
+            <Link href="/" className="relative z-10">
+              <Image src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBCpOImVMZM1Z4ly69njxJiYBrqpXWhCFR8z2D" alt="Precision Toronto" className="h-16 w-16" />
+            </Link>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
