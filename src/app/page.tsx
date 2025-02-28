@@ -137,10 +137,19 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90 z-10" />
 
-        <div className="relative z-20 container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-9xl font-bold mb-6 gradient-text">
-            Precision Toronto
-          </h1>
+        <div className="relative z-20 container mx-auto flex flex-col items-center justify-center text-center">
+          <div className='transform scale-150'>
+          <div className=''>
+          <Image
+            src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBCpOImVMZM1Z4ly69njxJiYBrqpXWhCFR8z2D"
+            alt="Precision Toronto"
+            className="w-48 h-48 mb-6 transform scale-150"
+            width={192}
+            height={48}
+            unoptimized
+          />
+          </div>
+          </div>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Toronto/GTA&apos;s Best for Auto Care & unrivalled Customer Satisfaction.
           </p>
@@ -286,121 +295,162 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in gradient-text">
-            Trusted by Customers and Dealerships
+          Our Google Reviews
           </h2>
 
           {/* Testimonial Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            <div className="glass-card p-8 rounded-2xl fade-in">
+            <div className="glass-card p-8 rounded-2xl fade-in text-black bg-white">
               <div className="flex items-start gap-4 mb-6">
-                <Image
-                  src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
-                  alt="Developer"
-                  className="w-12 h-12 rounded-full object-cover"
-                  width={48}
-                  height={48}
-                />
+                
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Shams Haroon</h3>
-                  <p className="text-gray-400">valued customer</p>
+                  <div className="flex items-center">
+                    {/* Star Icons */}
+                    {[...Array(5)].map((_, index) => (
+                      <svg
+                        key={index}
+                        className="w-5 h-5 text-yellow-500"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 .587l3.668 7.568 8.332 1.207-6 5.848 1.415 8.25L12 18.897l-7.415 3.91L6.332 15.21l-6-5.848 8.332-1.207z" />
+                      </svg>
+                    ))}
+                    <span className='pl-3 text-gray-500'>5 months ago</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-300 italic">
+              <p className="italic">
                 &apos;Got my tints done from this business. 30% in the front and 20% in the back and the results came out amazing. Would definitely come back if I needed to get tints done on a new car.&apos;
               </p>
             </div>
 
-            <div className="glass-card p-8 rounded-2xl fade-in">
+            <div className="glass-card p-8 rounded-2xl fade-in text-black bg-white">
               <div className="flex items-start gap-4 mb-6">
-                <Image
-                  src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
-                  alt="Developer"
-                  className="w-12 h-12 rounded-full object-cover"
-                  width={48}
-                  height={48}
-                />
+                
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Des Laferrara</h3>
-                  <p className="text-gray-400">valued customer</p>
+                  <div className="flex items-center">
+                    {/* Star Icons */}
+                    {[...Array(5)].map((_, index) => (
+                      <svg
+                        key={index}
+                        className="w-5 h-5 text-yellow-500"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 .587l3.668 7.568 8.332 1.207-6 5.848 1.415 8.25L12 18.897l-7.415 3.91L6.332 15.21l-6-5.848 8.332-1.207z" />
+                      </svg>
+                    ))}
+                    <span className='pl-3 text-gray-500'>5 months ago</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-300 italic">
+              <p className=" italic">
                 &apos;Your car is always in great hands with Precision. consistently delivers top notch results, and your car will look and feel brand new. Professional, detailed, and always making sure you&apos;re completely satisfied. never been disappointed! highly, highly recommend.&apos;
               </p>
             </div>
 
-            <div className="glass-card p-8 rounded-2xl fade-in">
+            <div className="glass-card p-8 rounded-2xl fade-in text-black bg-white">
               <div className="flex items-start gap-4 mb-6">
-                <Image
-                  src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
-                  alt="Developer"
-                  className="w-12 h-12 rounded-full object-cover"
-                  width={48}
-                  height={48}
-                />
+                
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Sayf Kamran</h3>
-                  <p className="text-gray-400">valued customer</p>
+                  <div className="flex items-center">
+                    {/* Star Icons */}
+                    {[...Array(5)].map((_, index) => (
+                      <svg
+                        key={index}
+                        className="w-5 h-5 text-yellow-500"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 .587l3.668 7.568 8.332 1.207-6 5.848 1.415 8.25L12 18.897l-7.415 3.91L6.332 15.21l-6-5.848 8.332-1.207z" />
+                      </svg>
+                    ))}
+                    <span className='pl-3 text-gray-500'>7 months ago</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-300 italic">
+              <p className=" italic">
                 &apos;Went to Precision for a much needed detailing, and the job was done incredibly by far the best service I have received well priced and extremely reliable.&apos;
               </p>
             </div>
 
-            <div className="glass-card p-8 rounded-2xl fade-in">
+            <div className="glass-card p-8 rounded-2xl fade-in text-black bg-white">
               <div className="flex items-start gap-4 mb-6">
-                <Image
-                  src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
-                  alt="Developer"
-                  className="w-12 h-12 rounded-full object-cover"
-                  width={48}
-                  height={48}
-                />
+                
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Yusuf Ali</h3>
-                  <p className="text-gray-400">valued customer</p>
+                  <div className="flex items-center">
+                    {/* Star Icons */}
+                    {[...Array(5)].map((_, index) => (
+                      <svg
+                        key={index}
+                        className="w-5 h-5 text-yellow-500"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 .587l3.668 7.568 8.332 1.207-6 5.848 1.415 8.25L12 18.897l-7.415 3.91L6.332 15.21l-6-5.848 8.332-1.207z" />
+                      </svg>
+                    ))}
+                    <span className='pl-3 text-gray-500'>2 years ago</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-300 italic">
+              <p className=" italic">
                 &apos;Absolutely spectacular service. Amazing attention to detail. This gentleman had my car looking like I had just purchased it out the showroom. Definitely will be returning, and definitely recommend this service to anyone who is looking to get their vehicle detailed to perfection with a good price tag. Thank you precision auto care!&apos;
               </p>
             </div>
 
-            <div className="glass-card p-8 rounded-2xl fade-in">
+            <div className="glass-card p-8 rounded-2xl fade-in text-black bg-white">
               <div className="flex items-start gap-4 mb-6">
-                <Image
-                  src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
-                  alt="Developer"
-                  className="w-12 h-12 rounded-full object-cover"
-                  width={48}
-                  height={48}
-                />
+                
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Angie F</h3>
-                  <p className="text-gray-400">valued customer</p>
+                  <div className="flex items-center">
+                    {/* Star Icons */}
+                    {[...Array(5)].map((_, index) => (
+                      <svg
+                        key={index}
+                        className="w-5 h-5 text-yellow-500"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 .587l3.668 7.568 8.332 1.207-6 5.848 1.415 8.25L12 18.897l-7.415 3.91L6.332 15.21l-6-5.848 8.332-1.207z" />
+                      </svg>
+                    ))}
+                    <span className='pl-3 text-gray-500'>9 months ago</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-300 italic">
+              <p className=" italic">
                 &apos;My car looked brand new after Haris took care of it. Unprecedented attention to detail. Best car detailing ever!&apos;
               </p>
             </div>
 
-            <div className="glass-card p-8 rounded-2xl fade-in" style={{ animationDelay: "200ms" }}>
+            <div className="glass-card p-8 rounded-2xl fade-in text-black bg-white" style={{ animationDelay: "200ms" }} >
               <div className="flex items-start gap-4 mb-6">
-                <Image
-                  src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
-                  alt="Developer"
-                  className="w-12 h-12 rounded-full object-cover"
-                  width={48}
-                  height={48}
-                />
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Maaz Shaikh</h3>
-                  <p className="text-gray-400">valued customer</p>
+                  <div className="flex items-center">
+                    {/* Star Icons */}
+                    {[...Array(5)].map((_, index) => (
+                      <svg
+                        key={index}
+                        className="w-5 h-5 text-yellow-500"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 .587l3.668 7.568 8.332 1.207-6 5.848 1.415 8.25L12 18.897l-7.415 3.91L6.332 15.21l-6-5.848 8.332-1.207z" />
+                      </svg>
+                    ))}
+                    <span className='pl-3 text-gray-500'>1 year ago</span>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-300 italic">
+              <p className=" italic">
                 &apos;Such a clean and professional job at an affordable rate. Definitely talented and efficient with the time, had my car spotless in an hour. He goes above and beyond to really take care of your car as his own.&apos;
               </p>
             </div>
