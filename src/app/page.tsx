@@ -40,7 +40,14 @@ export default function Home() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="relative z-10">
-              <Image src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBCpOImVMZM1Z4ly69njxJiYBrqpXWhCFR8z2D" alt="Precision Toronto" className="h-16 w-16" />
+              <Image
+                src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBCpOImVMZM1Z4ly69njxJiYBrqpXWhCFR8z2D"
+                alt="Precision Toronto"
+                className="w-16 h-16"
+                width={64}
+                height={64}
+                unoptimized
+              />
             </Link>
 
             {/* Desktop Menu */}
@@ -60,10 +67,10 @@ export default function Home() {
             {/* Desktop CTA Buttons */}
             <div className="hidden md:flex items-center space-x-4">
               <a href='/contact'>
-              <button className="px-6 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full font-medium hover:opacity-90 transition-all flex items-center gap-2 group">
-              BOOK NOW!
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+                <button className="px-6 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full font-medium hover:opacity-90 transition-all flex items-center gap-2 group">
+                  BOOK NOW!
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
               </a>
             </div>
 
@@ -82,9 +89,8 @@ export default function Home() {
 
           {/* Mobile Menu */}
           <div
-            className={`md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-lg transition-all duration-300 ${
-              isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-            }`}
+            className={`md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-lg transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+              }`}
           >
             <div className="container mx-auto px-4 py-6 space-y-4">
               {['Home', 'About', 'Past Work', 'Services'].map((item) => (
@@ -98,9 +104,9 @@ export default function Home() {
               ))}
               <div className="pt-4 space-y-4">
                 <a href='/contact'>
-                <button className="w-full px-6 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg font-medium hover:opacity-90 transition-all">
-                Book Now
-                </button>
+                  <button className="w-full px-6 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg font-medium hover:opacity-90 transition-all">
+                    Book Now
+                  </button>
                 </a>
               </div>
             </div>
@@ -117,7 +123,7 @@ export default function Home() {
           allow="autoplay; encrypted-media"
           allowFullScreen
           loading="eager"
-          style={{ 
+          style={{
             border: 'none',
             width: '100vw',
             height: '56.25vw', /* maintain 16:9 aspect ratio */
@@ -130,7 +136,7 @@ export default function Home() {
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90 z-10" />
-        
+
         <div className="relative z-20 container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-9xl font-bold mb-6 gradient-text">
             Precision Toronto
@@ -195,7 +201,7 @@ export default function Home() {
                 image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBMkZ1Fte2bwv7snOmrFW3L5fiSUaoACYgPjpE" // Replace with actual image URL
               }
             ].map((service, index) => (
-              <div 
+              <div
                 key={index}
                 className="group glass-card rounded-xl overflow-hidden fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
@@ -254,7 +260,7 @@ export default function Home() {
                 alt: "Wheel & Rim Services"
               }
             ].map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="group rounded-xl overflow-hidden fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
@@ -282,7 +288,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in gradient-text">
             Trusted by Customers and Dealerships
           </h2>
-          
+
           {/* Testimonial Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
             <div className="glass-card p-8 rounded-2xl fade-in">
@@ -300,7 +306,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &apos;Got my tints done from this business. 30% in the front and 20% in the back and the results came out amazing. Would definitely come back if I needed to get tints done on a new car.&apos;
+                &apos;Got my tints done from this business. 30% in the front and 20% in the back and the results came out amazing. Would definitely come back if I needed to get tints done on a new car.&apos;
               </p>
             </div>
 
@@ -319,7 +325,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &apos;Your car is always in great hands with Precision. consistently delivers top notch results, and your car will look and feel brand new. Professional, detailed, and always making sure you're completely satisfied. never been disappointed! highly, highly recommend.&apos;
+                &apos;Your car is always in great hands with Precision. consistently delivers top notch results, and your car will look and feel brand new. Professional, detailed, and always making sure you're completely satisfied. never been disappointed! highly, highly recommend.&apos;
               </p>
             </div>
 
@@ -338,7 +344,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &apos;Went to Precision for a much needed detailing, and the job was done incredibly by far the best service I have received well priced and extremely reliable.&apos;
+                &apos;Went to Precision for a much needed detailing, and the job was done incredibly by far the best service I have received well priced and extremely reliable.&apos;
               </p>
             </div>
 
@@ -357,7 +363,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &apos;Absolutely spectacular service. Amazing attention to detail. This gentleman had my car looking like I had just purchased it out the showroom. Definitely will be returning, and definitely recommend this service to anyone who is looking to get their vehicle detailed to perfection with a good price tag. Thank you precision auto care!&apos;
+                &apos;Absolutely spectacular service. Amazing attention to detail. This gentleman had my car looking like I had just purchased it out the showroom. Definitely will be returning, and definitely recommend this service to anyone who is looking to get their vehicle detailed to perfection with a good price tag. Thank you precision auto care!&apos;
               </p>
             </div>
 
@@ -376,10 +382,10 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &apos;My car looked brand new after Haris took care of it. Unprecedented attention to detail. Best car detailing ever!&apos;
+                &apos;My car looked brand new after Haris took care of it. Unprecedented attention to detail. Best car detailing ever!&apos;
               </p>
             </div>
-            
+
             <div className="glass-card p-8 rounded-2xl fade-in" style={{ animationDelay: "200ms" }}>
               <div className="flex items-start gap-4 mb-6">
                 <Image
@@ -395,7 +401,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &apos;Such a clean and professional job at an affordable rate. Definitely talented and efficient with the time, had my car spotless in an hour. He goes above and beyond to really take care of your car as his own.&apos;
+                &apos;Such a clean and professional job at an affordable rate. Definitely talented and efficient with the time, had my car spotless in an hour. He goes above and beyond to really take care of your car as his own.&apos;
               </p>
             </div>
           </div>
@@ -426,16 +432,16 @@ export default function Home() {
       {/* Footer */}
       <footer className="relative pt-24 pb-12 overflow-hidden bg-gradient-to-b from-gray-900 to-black">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
-        
+
         {/* Main Footer Content */}
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             {/* Company Info */}
             <div className="space-y-4">
               <h3 className="text-2xl font-bold gradient-text">
-              Precision Toronto</h3>
+                Precision Toronto</h3>
               <p className="text-gray-400">
-              Toronto/GTA's Best for Auto Care & unrivalled Customer Satisfaction.
+                Toronto/GTA's Best for Auto Care & unrivalled Customer Satisfaction.
               </p>
               <div className="flex space-x-4">
                 {/* <a href="#" className="glass-card p-2 rounded-full hover:bg-white/10 transition-all">
@@ -457,7 +463,7 @@ export default function Home() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-white">Main</h4>
               <ul className="space-y-3">
-              {[
+                {[
                   { text: 'Home', path: '/' },
                   { text: 'Past Work', path: '/work' },
                   { text: 'Services', path: '/services' }
@@ -494,7 +500,7 @@ export default function Home() {
           <div className="pt-8 border-t border-white/10">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-gray-400 text-sm">
-                © 2025 
+                © 2025
                 Precision Toronto. All rights reserved.
               </p>
               <div className="flex gap-1">
