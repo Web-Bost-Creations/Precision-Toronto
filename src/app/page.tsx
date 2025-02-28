@@ -43,7 +43,7 @@ export default function Home() {
               <Image
                 src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBCpOImVMZM1Z4ly69njxJiYBrqpXWhCFR8z2D"
                 alt="Precision Toronto"
-                className="w-16 h-16"
+                className="w-16 h-16 transform scale-150"
                 width={64}
                 height={64}
                 unoptimized
