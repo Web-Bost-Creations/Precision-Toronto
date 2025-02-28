@@ -294,7 +294,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &aposGot my tints done from this business. 30% in the front and 20% in the back and the results came out amazing. Would definitely come back if I needed to get tints done on a new car.&apos
+              &apos;Got my tints done from this business. 30% in the front and 20% in the back and the results came out amazing. Would definitely come back if I needed to get tints done on a new car.&apos;
               </p>
             </div>
 
@@ -311,7 +311,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &aposYour car is always in great hands with Precision. consistently delivers top notch results, and your car will look and feel brand new. Professional, detailed, and always making sure you're completely satisfied. never been disappointed! highly, highly recommend.&apos
+              &apos;Your car is always in great hands with Precision. consistently delivers top notch results, and your car will look and feel brand new. Professional, detailed, and always making sure you're completely satisfied. never been disappointed! highly, highly recommend.&apos;
               </p>
             </div>
 
@@ -328,7 +328,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &aposWent to Precision for a much needed detailing, and the job was done incredibly by far the best service I have received well priced and extremely reliable.&apos
+              &apos;Went to Precision for a much needed detailing, and the job was done incredibly by far the best service I have received well priced and extremely reliable.&apos;
               </p>
             </div>
 
@@ -345,7 +345,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &aposAbsolutely spectacular service. Amazing attention to detail. This gentleman had my car looking like I had just purchased it out the showroom. Definitely will be returning, and definitely recommend this service to anyone who is looking to get their vehicle detailed to perfection with a good price tag. Thank you precision auto care!&apos
+              &apos;Absolutely spectacular service. Amazing attention to detail. This gentleman had my car looking like I had just purchased it out the showroom. Definitely will be returning, and definitely recommend this service to anyone who is looking to get their vehicle detailed to perfection with a good price tag. Thank you precision auto care!&apos;
               </p>
             </div>
 
@@ -362,7 +362,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &aposMy car looked brand new after Haris took care of it. Unprecedented attention to detail. Best car detailing ever!&apos
+              &apos;My car looked brand new after Haris took care of it. Unprecedented attention to detail. Best car detailing ever!&apos;
               </p>
             </div>
             
@@ -379,7 +379,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-              &aposSuch a clean and professional job at an affordable rate. Definitely talented and efficient with the time, had my car spotless in an hour. He goes above and beyond to really take care of your car as his own.&apos
+              &apos;Such a clean and professional job at an affordable rate. Definitely talented and efficient with the time, had my car spotless in an hour. He goes above and beyond to really take care of your car as his own.&apos;
               </p>
             </div>
           </div>
