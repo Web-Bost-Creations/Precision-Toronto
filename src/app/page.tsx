@@ -43,7 +43,7 @@ export default function Home() {
             {/* Logo */}
             <Link href="/" className="relative z-10">
               <Image
-                src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBCpOImVMZM1Z4ly69njxJiYBrqpXWhCFR8z2D"
+                src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBXy1mlo5slxMyPBiNewC1HqQKurjfE2ATtzoU"
                 alt="Precision Toronto"
                 className="w-16 h-16 transform scale-150"
                 width={64}
@@ -152,9 +152,11 @@ export default function Home() {
           />
           </div>
           </div>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <strong>
+          <p className="text-xl  md:text-4xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Toronto/GTA&apos;s Best for Auto Care & unrivalled Customer Satisfaction.
           </p>
+          </strong>
           <div className="flex gap-4 justify-center">
             <a href='/about'>
               <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full font-semibold text-lg hover:opacity-90 transition-all flex items-center gap-2 relative overflow-hidden">
@@ -237,7 +239,7 @@ export default function Home() {
                       height={300}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-center">
-                      <h3 className="text-white text-7xl font-semibold mb-2">{service.title}</h3>
+                      <h3 className="text-white text-7xl  font-semibold mb-2">{service.title}</h3>
                       <p className="text-gray-400 text-center mb-4">{service.description}</p>
                       <a href={`/services/${service.title.replace(/\s+/g, '-').toLowerCase()}`}>
                         <button className="px-4 py-2 bg-blue-600 text-white rounded">
