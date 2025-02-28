@@ -239,10 +239,10 @@ export default function Home() {
                       height={300}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-center">
-                      <h3 className="text-white text-7xl  font-semibold mb-2">{service.title}</h3>
-                      <p className="text-gray-400 text-center mb-4">{service.description}</p>
+                      <h3 className="text-white text-xl md:text-7xl font-semibold mb-2">{service.title}</h3>
+                      <p className="text-gray-400 md:text-4xl text-center mb-4">{service.description}</p>
                       <a href={`/services/${service.title.replace(/\s+/g, '-').toLowerCase()}`}>
-                        <button className="px-4 py-2 bg-blue-600 text-white rounded">
+                        <button className="px-4 py-2 md:text-2xl bg-blue-600 text-white rounded-full">
                           Get Started
                         </button>
                       </a>
