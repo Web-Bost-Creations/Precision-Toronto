@@ -142,7 +142,7 @@ export default function Home() {
             Precision Toronto
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Toronto/GTA's Best for Auto Care & unrivalled Customer Satisfaction.
+            Toronto/GTA&apos;s Best for Auto Care & unrivalled Customer Satisfaction.
           </p>
           <div className="flex gap-4 justify-center">
             <a href='/about'>
@@ -177,7 +177,7 @@ export default function Home() {
               },
               {
                 title: "Paint Protection Film",
-                description: "Shield your vehicle's paint from rocks, debris, and environmental damage.",
+                description: "Shield your vehicle&apos;s paint from rocks, debris, and environmental damage.",
                 image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBhNa8yinKPeyT50wANQjbVI9uWq4gf8iG37Ra" // Replace with actual image URL
               },
               {
@@ -325,7 +325,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-                &apos;Your car is always in great hands with Precision. consistently delivers top notch results, and your car will look and feel brand new. Professional, detailed, and always making sure you're completely satisfied. never been disappointed! highly, highly recommend.&apos;
+                &apos;Your car is always in great hands with Precision. consistently delivers top notch results, and your car will look and feel brand new. Professional, detailed, and always making sure you&apos;re completely satisfied. never been disappointed! highly, highly recommend.&apos;
               </p>
             </div>
 
@@ -441,7 +441,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold gradient-text">
                 Precision Toronto</h3>
               <p className="text-gray-400">
-                Toronto/GTA's Best for Auto Care & unrivalled Customer Satisfaction.
+                Toronto/GTA&apos;s Best for Auto Care & unrivalled Customer Satisfaction.
               </p>
               <div className="flex space-x-4">
                 {/* <a href="#" className="glass-card p-2 rounded-full hover:bg-white/10 transition-all">
