@@ -307,7 +307,7 @@ export default function Home() {
                   <h3 className="gradient-text font-semibold text-lg">Shams Haroon</h3>
                   <div className="flex items-center">
                     {/* Star Icons */}
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(5).keys()].map((index: number) => (
                       <svg
                         key={index}
                         className="w-5 h-5 text-yellow-500"
@@ -333,7 +333,7 @@ export default function Home() {
                   <h3 className="gradient-text font-semibold text-lg">Des Laferrara</h3>
                   <div className="flex items-center">
                     {/* Star Icons */}
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(5).keys()].map((index: number) => (
                       <svg
                         key={index}
                         className="w-5 h-5 text-yellow-500"
@@ -359,7 +359,7 @@ export default function Home() {
                   <h3 className="gradient-text font-semibold text-lg">Sayf Kamran</h3>
                   <div className="flex items-center">
                     {/* Star Icons */}
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(5).keys()].map((index: number) => (
                       <svg
                         key={index}
                         className="w-5 h-5 text-yellow-500"
@@ -385,7 +385,7 @@ export default function Home() {
                   <h3 className="gradient-text font-semibold text-lg">Yusuf Ali</h3>
                   <div className="flex items-center">
                     {/* Star Icons */}
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(5).keys()].map((index: number) => (
                       <svg
                         key={index}
                         className="w-5 h-5 text-yellow-500"
@@ -411,7 +411,7 @@ export default function Home() {
                   <h3 className="gradient-text font-semibold text-lg">Angie F</h3>
                   <div className="flex items-center">
                     {/* Star Icons */}
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(5).keys()].map((index: number) => (
                       <svg
                         key={index}
                         className="w-5 h-5 text-yellow-500"
@@ -436,7 +436,7 @@ export default function Home() {
                   <h3 className="gradient-text font-semibold text-lg">Maaz Shaikh</h3>
                   <div className="flex items-center">
                     {/* Star Icons */}
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(5).keys()].map((index: number) => (
                       <svg
                         key={index}
                         className="w-5 h-5 text-yellow-500"
