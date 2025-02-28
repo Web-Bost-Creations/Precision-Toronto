@@ -4,6 +4,8 @@ import { ArrowRight, Code2, Layers, Rocket, Sparkles, Zap, Github, Twitter, Link
 import { useEffect, useState } from 'react';
 import Link from 'next/link'; // Import Link
 import Image from 'next/image'; // Import Image
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css'; // Import Swiper styles
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,7 +54,7 @@ export default function Home() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              {['Home', 'About', 'Past Work', 'Services'].map((item) => (
+              {['Home', 'About', 'Past Work'].map((item) => (
                 <a
                   key={item}
                   href="#"
@@ -93,7 +95,7 @@ export default function Home() {
               }`}
           >
             <div className="container mx-auto px-4 py-6 space-y-4">
-              {['Home', 'About', 'Past Work', 'Services'].map((item) => (
+              {['Home', 'About', 'Past Work' ].map((item) => (
                 <a
                   key={item}
                   href="#"
@@ -172,66 +174,82 @@ export default function Home() {
 
       {/* Services Showcase Section */}
       <section className="relative py-32 overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black">
+                {/* View More Section */}
+                <div className="flex flex-col items-center mt-16">
+          <div className="flex flex-col items-center">
+            <div className="w-10 h-10 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-full h-full text-white animate-bounce"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m0 0l-4-4m4 4l4-4" />
+              </svg>
+            </div>
+            <span className="text-white text-lg">View More</span>
+          </div>
+        </div>
+
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
         <div className="container mx-auto px-4 relative">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in gradient-text">
             Our Services
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            className="mySwiper"
+          >
             {[
               {
-                title: "Window Tinting",
-                description: "Premium ceramic tints with lifetime warranty. UV protection and heat reduction.",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBbsRUCErBnqPsmHehvdjYMx21UD56TNfwtLFk" // Replace with actual image URL
-              },
-              {
-                title: "Paint Protection Film",
-                description: "Shield your vehicle&apos;s paint from rocks, debris, and environmental damage.",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBhNa8yinKPeyT50wANQjbVI9uWq4gf8iG37Ra" // Replace with actual image URL
+                title: "AUTO DETAILING",
+                description: "Restore your ride!",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBaAfzAXtN7I2ByenPltvUchGV8dmLfT6S0iCo"
               },
               {
                 title: "Ceramic Coating",
+                description: "Shield your vehicle&apos;s paint from rocks, debris, and environmental damage.",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBn9h0pG34lEbFrsUOipKXmYagnAjTIHGVzoPf"
+              },
+              {
+                title: "Window Tinting",
                 description: "Long-lasting protection with incredible gloss and hydrophobic properties.",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBn9h0pG34lEbFrsUOipKXmYagnAjTIHGVzoPf" // Replace with actual image URL
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBbsRUCErBnqPsmHehvdjYMx21UD56TNfwtLFk"
               },
               {
-                title: "Interior Detailing",
+                title: "Paint Protection Film",
                 description: "Deep cleaning and protection of all interior surfaces.",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBaAfzAXtN7I2ByenPltvUchGV8dmLfT6S0iCo" // Replace with actual image URL
-              },
-              {
-                title: "Exterior Detailing",
-                description: "Professional washing, clay bar treatment, and paint correction.",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB5ZguZZa8dHiRUngab4AVKoIhvj015mTeP9Fs" // Replace with actual image URL
-              },
-              {
-                title: "Wheel & Rim Services",
-                description: "Wheel restoration, ceramic coating, and protection services.",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBMkZ1Fte2bwv7snOmrFW3L5fiSUaoACYgPjpE" // Replace with actual image URL
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKVMRy46tGmnr8f2YWqBMpNDPydLOTsa6lA9h"
               }
             ].map((service, index) => (
-              <div
-                key={index}
-                className="group glass-card rounded-xl overflow-hidden fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="aspect-video relative overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    width={500}
-                    height={300}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+              <SwiperSlide key={index}>
+                <div className="group glass-card rounded-xl overflow-hidden fade-in relative">
+                  <div className="aspect-video relative overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      width={500}
+                      height={300}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-center">
+                      <h3 className="text-white text-7xl font-semibold mb-2">{service.title}</h3>
+                      <p className="text-gray-400 text-center mb-4">{service.description}</p>
+                      <a href={`/services/${service.title.replace(/\s+/g, '-').toLowerCase()}`}>
+                        <button className="px-4 py-2 bg-blue-600 text-white rounded">
+                          Get Started
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 gradient-text">{service.title}</h3>
-                  <p className="text-gray-400">{service.description}</p>
-                </div>
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
       </section>
 
@@ -515,8 +533,7 @@ export default function Home() {
               <ul className="space-y-3">
                 {[
                   { text: 'Home', path: '/' },
-                  { text: 'Past Work', path: '/work' },
-                  { text: 'Services', path: '/services' }
+                  { text: 'Past Work', path: '/work' }
                 ].map(({ text, path }) => (
                   <li key={text}>
                     <a href={path} className="text-gray-400 hover:text-blue-400 transition-colors">
