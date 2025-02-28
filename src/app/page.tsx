@@ -201,10 +201,12 @@ export default function Home() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="aspect-video relative overflow-hidden">
-                  <img
+                  <Image
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    width={500}
+                    height={300}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 </div>
@@ -258,10 +260,12 @@ export default function Home() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="aspect-square relative overflow-hidden">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.alt}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    width={500}
+                    height={300}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
@@ -283,10 +287,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
             <div className="glass-card p-8 rounded-2xl fade-in">
               <div className="flex items-start gap-4 mb-6">
-                <img
+                <Image
                   src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
                   alt="Developer"
                   className="w-12 h-12 rounded-full object-cover"
+                  width={48}
+                  height={48}
                 />
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Shams Haroon</h3>
@@ -300,10 +306,12 @@ export default function Home() {
 
             <div className="glass-card p-8 rounded-2xl fade-in">
               <div className="flex items-start gap-4 mb-6">
-                <img
+                <Image
                   src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
                   alt="Developer"
                   className="w-12 h-12 rounded-full object-cover"
+                  width={48}
+                  height={48}
                 />
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Des Laferrara</h3>
@@ -317,10 +325,12 @@ export default function Home() {
 
             <div className="glass-card p-8 rounded-2xl fade-in">
               <div className="flex items-start gap-4 mb-6">
-                <img
+                <Image
                   src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
                   alt="Developer"
                   className="w-12 h-12 rounded-full object-cover"
+                  width={48}
+                  height={48}
                 />
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Sayf Kamran</h3>
@@ -334,10 +344,12 @@ export default function Home() {
 
             <div className="glass-card p-8 rounded-2xl fade-in">
               <div className="flex items-start gap-4 mb-6">
-                <img
+                <Image
                   src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
                   alt="Developer"
                   className="w-12 h-12 rounded-full object-cover"
+                  width={48}
+                  height={48}
                 />
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Yusuf Ali</h3>
@@ -351,10 +363,12 @@ export default function Home() {
 
             <div className="glass-card p-8 rounded-2xl fade-in">
               <div className="flex items-start gap-4 mb-6">
-                <img
+                <Image
                   src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
                   alt="Developer"
                   className="w-12 h-12 rounded-full object-cover"
+                  width={48}
+                  height={48}
                 />
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Angie F</h3>
@@ -368,10 +382,12 @@ export default function Home() {
             
             <div className="glass-card p-8 rounded-2xl fade-in" style={{ animationDelay: "200ms" }}>
               <div className="flex items-start gap-4 mb-6">
-                <img
+                <Image
                   src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO"
                   alt="Developer"
                   className="w-12 h-12 rounded-full object-cover"
+                  width={48}
+                  height={48}
                 />
                 <div>
                   <h3 className="gradient-text font-semibold text-lg">Maaz Shaikh</h3>
