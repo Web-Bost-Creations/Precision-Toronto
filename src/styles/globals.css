@@ -151,3 +151,31 @@ body {
       inset 0 1px 1px rgba(255, 255, 255, 0.1);
   }
 }
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white; /* Change the color of the arrows */
+    width: 40px; /* Set width for the buttons */
+    height: 40px; /* Set height for the buttons */
+    background: rgba(0, 0, 0, 0.5); /* Optional: background color for better visibility */
+    border-radius: 50%; /* Make buttons circular */
+    display: flex; /* Center the arrow icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    z-index: 10; /* Ensure buttons are above other elements */
+}
+
+.swiper-button-next {
+    right: 10px; /* Position the next button */
+}
+
+.swiper-button-prev {
+    left: 10px; /* Position the previous button */
+}
+
+/* Optional: Add hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}

@@ -174,13 +174,10 @@ export default function Home() {
         </div>
       </div>
 
-
-
       {/* Services Showcase Section */}
       <section className="relative py-32 overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black">
-
-{/* View More Section */}
-<div className="flex flex-col items-center mt-16 mb-16">
+        {/* View More Section */}
+        <div className="flex flex-col items-center mt-16 mb-16">
           <div className="flex flex-col items-center">
             <div className="w-10 h-10 mb-2">
               <svg
@@ -195,7 +192,7 @@ export default function Home() {
             </div>
             <span className="text-white text-lg">View More</span>
           </div>
-        </div>        
+        </div>
 
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
         <div className="relative w-full">
@@ -205,7 +202,10 @@ export default function Home() {
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
-            navigation
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }}
             pagination={{ clickable: true }}
             className="mySwiper w-full"
           >
@@ -255,6 +255,9 @@ export default function Home() {
               </SwiperSlide>
             ))}
           </Swiper>
+          {/* Custom Navigation Buttons */}
+          <div className="swiper-button-prev" style={{ color: 'white' }} />
+          <div className="swiper-button-next" style={{ color: 'white' }} />
         </div>
       </section>
 
@@ -263,7 +266,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in gradient-text">
-            Our Gallery
+            Our Work
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {[
@@ -318,7 +321,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in gradient-text">
-          Our Google Reviews
+            Our Google Reviews
           </h2>
 
           {/* Testimonial Cards */}
@@ -477,6 +480,15 @@ export default function Home() {
                 &apos;Such a clean and professional job at an affordable rate. Definitely talented and efficient with the time, had my car spotless in an hour. He goes above and beyond to really take care of your car as his own.&apos;
               </p>
             </div>
+          </div>
+
+          {/* Add the "See our Google reviews" button here */}
+          <div className="text-center">
+            <a href="https://www.google.com/maps/place/YourBusinessName/reviews" target="_blank" rel="noopener noreferrer">
+              <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full font-semibold text-lg hover:opacity-90 transition-all">
+                See our Google reviews
+              </button>
+            </a>
           </div>
         </div>
       </section>
