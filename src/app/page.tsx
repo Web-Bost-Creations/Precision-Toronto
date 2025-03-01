@@ -279,11 +279,11 @@ export default function Home() {
                 alt: "Paint Protection Film"
               },
               {
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBq5nUvvYsNxfujw0v69PZOBH1Sc7DQnRGkaFE",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB9PouO7DTer0bNstk4PB3vSCQWpUF6DXOly5M",
                 alt: "Ceramic Coating"
               },
               {
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB4s2m3xUujw0UIc6ox5vYWkSFXDgGH2hMKREi",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBeewMma8cxHnX5dALMOzkyaNl73FqRPIgGErB",
                 alt: "Interior Detailing"
               },
               {
@@ -486,7 +486,7 @@ export default function Home() {
           <div className="text-center">
             <a href="https://maps.app.goo.gl/FT3DaJsFWaCguoky9" target="_blank" rel="noopener noreferrer">
               <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full font-semibold text-lg hover:opacity-90 transition-all">
-                See our Google reviews
+                Share your experience
               </button>
             </a>
           </div>
