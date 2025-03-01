@@ -484,7 +484,7 @@ export default function Home() {
 
           {/* Add the "See our Google reviews" button here */}
           <div className="text-center">
-            <a href="https://www.google.com/maps/place/YourBusinessName/reviews" target="_blank" rel="noopener noreferrer">
+            <a href="https://maps.app.goo.gl/FT3DaJsFWaCguoky9" target="_blank" rel="noopener noreferrer">
               <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full font-semibold text-lg hover:opacity-90 transition-all">
                 See our Google reviews
               </button>
