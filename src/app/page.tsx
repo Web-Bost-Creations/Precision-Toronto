@@ -174,10 +174,13 @@ export default function Home() {
         </div>
       </div>
 
+
+
       {/* Services Showcase Section */}
       <section className="relative py-32 overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black">
-                {/* View More Section */}
-                <div className="flex flex-col items-center mt-16">
+
+{/* View More Section */}
+<div className="flex flex-col items-center mt-16 mb-16">
           <div className="flex flex-col items-center">
             <div className="w-10 h-10 mb-2">
               <svg
@@ -192,10 +195,10 @@ export default function Home() {
             </div>
             <span className="text-white text-lg">View More</span>
           </div>
-        </div>
+        </div>        
 
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
-        <div className="container mx-auto px-4 relative">
+        <div className="relative w-full">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in gradient-text">
             Our Services
           </h2>
@@ -204,7 +207,7 @@ export default function Home() {
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
-            className="mySwiper"
+            className="mySwiper w-full"
           >
             {[
               {
@@ -229,7 +232,7 @@ export default function Home() {
               }
             ].map((service, index) => (
               <SwiperSlide key={index}>
-                <div className="group glass-card rounded-xl overflow-hidden fade-in relative">
+                <div className="group glass-card rounded-xl overflow-hidden fade-in relative w-full">
                   <div className="aspect-video relative overflow-hidden">
                     <Image
                       src={service.image}
