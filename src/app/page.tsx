@@ -43,9 +43,9 @@ export default function Home() {
             {/* Logo */}
             <Link href="/" className="relative z-10">
               <Image
-                src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBXy1mlo5slxMyPBiNewC1HqQKurjfE2ATtzoU"
+                src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBaA9NqwtN7I2ByenPltvUchGV8dmLfT6S0iCo"
                 alt="Precision Toronto"
-                className="w-16 h-16 transform scale-150"
+                className="w-16 h-12 transform scale-150"
                 width={64}
                 height={64}
                 unoptimized
@@ -143,9 +143,9 @@ export default function Home() {
           <div className='transform scale-150'>
           <div className=''>
           <Image
-            src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBCpOImVMZM1Z4ly69njxJiYBrqpXWhCFR8z2D"
+            src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdnpX5TkVQk2glCzju5GExv06fpAZOPi8coSY"
             alt="Precision Toronto"
-            className="w-48 h-48 mb-6 transform scale-150"
+            className=" mb-6 transform scale-150"
             width={192}
             height={48}
             unoptimized
@@ -213,7 +213,7 @@ export default function Home() {
               {
                 title: "AUTO DETAILING",
                 description: "Restore your ride!",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBaAfzAXtN7I2ByenPltvUchGV8dmLfT6S0iCo"
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKFoUSv6tGmnr8f2YWqBMpNDPydLOTsa6lA9h"
               },
               {
                 title: "Ceramic Coating",
