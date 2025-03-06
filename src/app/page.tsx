@@ -145,7 +145,7 @@ export default function Home() {
           <Image
             src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdnpX5TkVQk2glCzju5GExv06fpAZOPi8coSY"
             alt="Precision Toronto"
-            className=" mb-6 transform scale-150"
+            className=" mb-11 transfor scale-150"
             width={192}
             height={48}
             unoptimized
