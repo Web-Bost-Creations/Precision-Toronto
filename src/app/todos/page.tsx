@@ -175,7 +175,6 @@ export default function TodosPage() {
                 className="w-16 h-12 transform scale-150"
                 width={64}
                 height={64}
-                unoptimized
               />
             </Link>
 

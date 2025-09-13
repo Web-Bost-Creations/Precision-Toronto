@@ -5,7 +5,7 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {
+const baseConfig = {
     images: {
         remotePatterns: [
           {
@@ -13,7 +13,32 @@ const config = {
             hostname: 'o2ftva8bhe.ufs.sh',
           },
         ],
-      },
+        formats: ['image/avif', 'image/webp'],
+    },
+    compress: true,
+    compiler: {
+        removeConsole: process.env.NODE_ENV === 'production',
+    },
+    experimental: {
+        optimizeCss: true,
+        optimizePackageImports: ['lucide-react'],
+    },
+    async headers() {
+        return [
+            {
+                source: '/:path*\\.(svg|png|jpg|jpeg|gif|webp|avif|ico|css|js|woff2?)',
+                headers: [
+                    { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+                ],
+            },
+        ];
+    },
 };
+
+const withBundleAnalyzer = (await import('@next/bundle-analyzer')).default({
+    enabled: process.env.ANALYZE === 'true',
+});
+
+const config = withBundleAnalyzer(baseConfig);
 
 export default config;
