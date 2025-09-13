@@ -528,14 +528,6 @@ Total Estimated Cost: $${getTotalPrice()}
                 </a>
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl">
-                <Phone className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-white mb-2">Call Us</h3>
-                <p className="text-gray-400 mb-4">Speak with our team</p>
-                <a href="tel:+12498775640" className="text-blue-400 hover:text-blue-300">
-                  (249) 877-5640
-                </a>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl">
                 <Mail className="w-12 h-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
                 <p className="text-gray-400 mb-4">Detailed inquiries</p>
