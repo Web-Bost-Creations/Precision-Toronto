@@ -96,7 +96,7 @@ export default function About() {
             {/* Logo */}
             <Link href="/" className="relative z-10">
               <Image
-                src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBaA9NqwtN7I2ByenPltvUchGV8dmLfT6S0iCo"
+                src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBq5eGX9YsNxfujw0v69PZOBH1Sc7DQnRGkaFE"
                 alt="Barrie's Mobile Detailing"
                 className="w-16 h-12 transform scale-150"
                 width={64}

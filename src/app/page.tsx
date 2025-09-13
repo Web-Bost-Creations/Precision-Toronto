@@ -101,7 +101,7 @@ export default function Home() {
             {/* Logo */}
             <Link href="/" className="relative z-10">
               <Image
-                src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBaA9NqwtN7I2ByenPltvUchGV8dmLfT6S0iCo"
+                src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBq5eGX9YsNxfujw0v69PZOBH1Sc7DQnRGkaFE"
                 alt="Barrie's Mobile Detailing"
                 className="w-16 h-12 transform scale-150"
                 width={64}
@@ -209,9 +209,9 @@ export default function Home() {
           <div className='transform scale-150'>
           <div className=''>
           <Image
-            src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdnpX5TkVQk2glCzju5GExv06fpAZOPi8coSY"
+            src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB3F0CZMvIHrRV3bcKLXWzfQod89hGa6vAY4qU"
             alt="Barrie's Mobile Detailing"
-            className=" mb-11 transfor scale-150"
+            className=" transfor scale-150"
             width={192}
             height={48}
             unoptimized
