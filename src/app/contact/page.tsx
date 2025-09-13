@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Clock, Car, MapPin, MessageCircle, Mail, Instagram, Menu, X, Calendar, Phone, Send } from 'lucide-react';
+import { ArrowRight, Clock, Car, MapPin, MessageCircle, Mail, Instagram, Menu, X, Calendar, Send } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -202,7 +202,6 @@ Total Estimated Cost: $${getTotalPrice()}
                 className="w-16 h-12 transform scale-150"
                 width={64}
                 height={64}
-                unoptimized
               />
             </Link>
 

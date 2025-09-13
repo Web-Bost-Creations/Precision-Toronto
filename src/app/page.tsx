@@ -4,8 +4,7 @@ import { ArrowRight, Instagram, Menu, X, Clock, Mail, MapPin, MessageCircle } fr
 import { useEffect, useState } from 'react';
 import Link from 'next/link'; // Import Link
 import Image from 'next/image'; // Import Image
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css'; // Import Swiper styles
+
 
 // Services data with pricing
 const SERVICES = [
@@ -106,7 +105,6 @@ export default function Home() {
                 className="w-16 h-12 transform scale-150"
                 width={64}
                 height={64}
-                unoptimized
               />
             </Link>
 
@@ -192,7 +190,7 @@ export default function Home() {
           className="absolute inset-0 w-full h-full"
           allow="autoplay; encrypted-media"
           allowFullScreen
-          loading="eager"
+          loading="lazy"
           style={{
             border: 'none',
             width: '100vw',
@@ -216,7 +214,6 @@ export default function Home() {
             className=" transfor scale-150"
             width={192}
             height={48}
-            unoptimized
           />
           </div>
           </div>
