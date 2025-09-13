@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Code2, Layers, Rocket, Sparkles, Zap, Github, Twitter, Linkedin, Instagram, Menu, X, Shield, Clock, Car, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { ArrowRight, Instagram, Menu, X, Clock, Mail, MapPin, MessageCircle } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Link from 'next/link'; // Import Link
 import Image from 'next/image'; // Import Image
