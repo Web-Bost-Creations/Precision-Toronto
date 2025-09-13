@@ -6,13 +6,13 @@ import { type Metadata } from "next";
 import { TRPCReactProvider } from "~/trpc/react";
 
 export const metadata: Metadata = {
-  title: "Precision Toronto",
-  description: "Toronto's premier precision machining and manufacturing services. Specializing in CNC machining, prototyping, and custom parts production with industry-leading quality and precision.",
+  title: "Barrie\'s Mobile Detailing",
+  description: "Barrie's premier mobile detailing services. Specializing in mobile detailing services with industry-leading quality and precision.",
   icons: [{ rel: "icon", url: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO" }],
   metadataBase: new URL('https://precision-toronto.com'),
   openGraph: {
-    title: 'Precision Toronto',
-    description: 'Toronto\'s premier precision machining and manufacturing services. Specializing in CNC machining, prototyping, and custom parts production.',
+    title: 'Barrie\'s Mobile Detailing',
+    description: 'Barrie\'s premier mobile detailing services. Specializing in mobile detailing services with industry-leading quality and precision.',
     type: 'website',
     locale: 'en_CA',
     images: [
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
         url: 'https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO',
         width: 1200,
         height: 630,
-        alt: 'Precision Toronto - CNC Machining Services',
+        alt: 'Barrie\'s Mobile Detailing - Mobile Detailing Services',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Precision Toronto',
-    description: 'Toronto\'s premier precision machining and manufacturing services',
+    title: 'Barrie\'s Mobile Detailing',
+    description: 'Barrie\'s premier mobile detailing services',
     images: ['https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB6jZIz4c14avs3mALE2itWCYze7djnrQPbRBO'],
   },
   robots: {

@@ -1,11 +1,69 @@
 'use client';
 
-import { ArrowRight, Code2, Layers, Rocket, Sparkles, Zap, Github, Twitter, Linkedin, Instagram, Menu, X, Shield, Clock, Car } from 'lucide-react';
+import { ArrowRight, Code2, Layers, Rocket, Sparkles, Zap, Github, Twitter, Linkedin, Instagram, Menu, X, Shield, Clock, Car, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Link from 'next/link'; // Import Link
 import Image from 'next/image'; // Import Image
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
+
+// Services data with pricing
+const SERVICES = [
+  {
+    id: 1,
+    title: "Auto Detailing",
+    description: "Complete interior and exterior detailing to restore your vehicle's showroom shine. Includes wash, wax, interior cleaning, and protection.",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKFoUSv6tGmnr8f2YWqBMpNDPydLOTsa6lA9h",
+    price: "Starting at $150",
+    features: ["Interior & Exterior", "Paint Protection", "Lifetime Warranty"],
+    duration: "2-4 hours"
+  },
+  {
+    id: 2,
+    title: "Interior Detailing",
+    description: "Deep cleaning and protection of all interior surfaces including leather conditioning, fabric protection, and dashboard restoration.",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBeewMma8cxHnX5dALMOzkyaNl73FqRPIgGErB",
+    price: "Starting at $100",
+    features: ["Leather Conditioning", "Fabric Protection", "Odor Elimination"],
+    duration: "2-3 hours"
+  },
+  {
+    id: 3,
+    title: "Full In & Out Detail",
+    description: "Premium ceramic coating that provides long-lasting protection with incredible gloss and hydrophobic properties for your vehicle's paint.",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBn9h0pG34lEbFrsUOipKXmYagnAjTIHGVzoPf",
+    price: "Starting at $200",
+    features: ["5-Year Protection", "UV Resistance", "Easy Maintenance"],
+    duration: "1-2 days"
+  },
+  {
+    id: 4,
+    title: "Ceramic Coating",
+    description: "Premium ceramic coating that provides long-lasting protection with incredible gloss and hydrophobic properties for your vehicle's paint.",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBn9h0pG34lEbFrsUOipKXmYagnAjTIHGVzoPf",
+    price: "Starting at $500",
+    features: ["5-Year Protection", "UV Resistance", "Easy Maintenance"],
+    duration: "2-3 hours"
+  },
+  {
+    id: 5,
+    title: "Monthly Maintenance Detail",
+    description: "Deep cleaning and protection of all interior surfaces including leather conditioning, fabric protection, and dashboard restoration, every month.",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBeewMma8cxHnX5dALMOzkyaNl73FqRPIgGErB",
+    price: "Starting at $100/month",
+    features: ["Monthly Cleaning", "Odor Elimination", "Protection"],
+    duration: "1-1 1/2 hour"
+  },
+  {
+    id: 6,
+    title: "Wheel & Rim Services",
+    description: "Professional wheel cleaning, polishing, and protection services to keep your rims looking brand new and protected from brake dust.",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB8gut7rI1vCAOKdVGZPecbrXpkIfHxNaUBS5t",
+    price: "Starting at $80",
+    features: ["Deep Cleaning", "Polishing", "Protection Coating"],
+    duration: "1-2 hours"
+  }
+];
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +102,7 @@ export default function Home() {
             <Link href="/" className="relative z-10">
               <Image
                 src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBaA9NqwtN7I2ByenPltvUchGV8dmLfT6S0iCo"
-                alt="Precision Toronto"
+                alt="Barrie's Mobile Detailing"
                 className="w-16 h-12 transform scale-150"
                 width={64}
                 height={64}
@@ -54,13 +112,17 @@ export default function Home() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              {['Home', 'About', 'Past Work'].map((item) => (
+              {[
+                { text: 'Home', path: '/' },
+                { text: 'About', path: '/about' },
+                { text: 'Past Work', path: '/past-work' }
+              ].map((item) => (
                 <a
-                  key={item}
-                  href="#"
+                  key={item.text}
+                  href={item.path}
                   className="text-gray-300 hover:text-white transition-colors relative group"
                 >
-                  {item}
+                  {item.text}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 transition-all group-hover:w-full" />
                 </a>
               ))}
@@ -95,13 +157,17 @@ export default function Home() {
               }`}
           >
             <div className="container mx-auto px-4 py-6 space-y-4">
-              {['Home', 'About', 'Past Work' ].map((item) => (
+              {[
+                { text: 'Home', path: '/' },
+                { text: 'About', path: '/about' },
+                { text: 'Past Work', path: '/past-work' }
+              ].map((item) => (
                 <a
-                  key={item}
-                  href="#"
+                  key={item.text}
+                  href={item.path}
                   className="block py-2 text-gray-300 hover:text-white transition-colors"
                 >
-                  {item}
+                  {item.text}
                 </a>
               ))}
               <div className="pt-4 space-y-4">
@@ -144,7 +210,7 @@ export default function Home() {
           <div className=''>
           <Image
             src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdnpX5TkVQk2glCzju5GExv06fpAZOPi8coSY"
-            alt="Precision Toronto"
+            alt="Barrie's Mobile Detailing"
             className=" mb-11 transfor scale-150"
             width={192}
             height={48}
@@ -154,7 +220,7 @@ export default function Home() {
           </div>
           <strong>
           <p className="text-xl  md:text-4xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Toronto/GTA&apos;s Best for Auto Care & unrivalled Customer Satisfaction.
+          Specializing in mobile detailing services with industry-leading quality and precision.
           </p>
           </strong>
           <div className="flex gap-4 justify-center">
@@ -175,89 +241,92 @@ export default function Home() {
       </div>
 
       {/* Services Showcase Section */}
-      <section className="relative py-32 overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black">
-        {/* View More Section */}
-        <div className="flex flex-col items-center mt-16 mb-16">
-          <div className="flex flex-col items-center">
-            <div className="w-10 h-10 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-full text-white animate-bounce"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m0 0l-4-4m4 4l4-4" />
-              </svg>
-            </div>
-            <span className="text-white text-lg">View More</span>
-          </div>
-        </div>
-
+      <section className="relative py-20 overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
-        <div className="relative w-full">
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in gradient-text">
             Our Services
           </h2>
-          <Swiper
-            spaceBetween={30}
-            slidesPerView={1}
-            navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            }}
-            pagination={{ clickable: true }}
-            className="mySwiper w-full"
-          >
-            {[
-              {
-                title: "AUTO DETAILING",
-                description: "Restore your ride!",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKFoUSv6tGmnr8f2YWqBMpNDPydLOTsa6lA9h"
-              },
-              {
-                title: "Ceramic Coating",
-                description: "Shield your vehicle&apos;s paint from rocks, debris, and environmental damage.",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBn9h0pG34lEbFrsUOipKXmYagnAjTIHGVzoPf"
-              },
-              {
-                title: "Window Tinting",
-                description: "Long-lasting protection with incredible gloss and hydrophobic properties.",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBbsRUCErBnqPsmHehvdjYMx21UD56TNfwtLFk"
-              },
-              {
-                title: "Paint Protection Film",
-                description: "Deep cleaning and protection of all interior surfaces.",
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKVMRy46tGmnr8f2YWqBMpNDPydLOTsa6lA9h"
-              }
-            ].map((service, index) => (
-              <SwiperSlide key={index}>
-                <div className="group glass-card rounded-xl overflow-hidden fade-in relative w-full">
-                  <div className="aspect-video relative overflow-hidden">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      width={500}
-                      height={300}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-center">
-                      <h3 className="text-white text-xl md:text-7xl font-semibold mb-2">{service.title}</h3>
-                      <p className="text-gray-400 md:text-4xl text-center mb-4">{service.description}</p>
-                      <a href={`/services/${service.title.replace(/\s+/g, '-').toLowerCase()}`}>
-                        <button className="px-4 py-2 md:text-2xl bg-blue-600 text-white rounded-full">
-                          Get Started
-                        </button>
-                      </a>
+          
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {SERVICES.map((service, index) => (
+              <div
+                key={service.id}
+                className="group glass-card rounded-2xl overflow-hidden fade-in hover:scale-105 transition-all duration-300"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {/* Service Image */}
+                <div className="aspect-video relative overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    width={400}
+                    height={250}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  
+                  {/* Price Badge */}
+                  <div className="absolute top-4 right-4">
+                    <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      {service.price}
+                    </div>
+                  </div>
+                  
+                  {/* Duration Badge */}
+                  <div className="absolute top-4 left-4">
+                    <div className="bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
+                      <Clock className="w-4 h-4 inline mr-1" />
+                      {service.duration}
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+
+                {/* Service Content */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-3 gradient-text">{service.title}</h3>
+                  <p className="text-gray-400 mb-4 text-sm leading-relaxed">{service.description}</p>
+                  
+                  {/* Features */}
+                  <div className="mb-6">
+                    <h4 className="text-sm font-semibold text-gray-300 mb-2">Features:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {service.features.map((feature, featureIndex) => (
+                        <span
+                          key={featureIndex}
+                          className="bg-gray-800/50 text-gray-300 px-2 py-1 rounded-md text-xs"
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* CTA Button */}
+                  <a href={`/services/${service.title.replace(/\s+/g, '-').toLowerCase()}`}>
+                    <button className="w-full group/btn px-4 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl font-semibold text-white hover:opacity-90 transition-all flex items-center justify-center gap-2">
+                      <span>Get Started</span>
+                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </button>
+                  </a>
+                </div>
+              </div>
             ))}
-          </Swiper>
-          {/* Custom Navigation Buttons */}
-          <div className="swiper-button-prev" style={{ color: 'white' }} />
-          <div className="swiper-button-next" style={{ color: 'white' }} />
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center">
+            <p className="text-gray-400 mb-6 text-lg">
+              Ready to transform your vehicle? Choose from our premium services above.
+            </p>
+            <a href="/contact">
+              <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full font-semibold text-lg hover:opacity-90 transition-all flex items-center gap-2 mx-auto">
+                <span>Book Your Service</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -493,7 +562,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section 
+      {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-black/95" />
         <div className="container mx-auto px-4 relative z-10">
@@ -512,7 +581,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Footer */}
       <footer className="relative pt-24 pb-12 overflow-hidden bg-gradient-to-b from-gray-900 to-black">
@@ -524,33 +593,25 @@ export default function Home() {
             {/* Company Info */}
             <div className="space-y-4">
               <h3 className="text-2xl font-bold gradient-text">
-                Precision Toronto</h3>
+                Barrie&apos;s Mobile Detailing
+              </h3>
               <p className="text-gray-400">
-                Toronto/GTA&apos;s Best for Auto Care & unrivalled Customer Satisfaction.
+                Barrie&apos;s premier mobile detailing services
               </p>
               <div className="flex space-x-4">
-                {/* <a href="#" className="glass-card p-2 rounded-full hover:bg-white/10 transition-all">
-                  <Github className="w-5 h-5 text-gray-400 hover:text-blue-400" />
-                </a>
-                <a href="#" className="glass-card p-2 rounded-full hover:bg-white/10 transition-all">
-                  <Twitter className="w-5 h-5 text-gray-400 hover:text-blue-400" />
-                </a>
-                <a href="#" className="glass-card p-2 rounded-full hover:bg-white/10 transition-all">
-                  <Linkedin className="w-5 h-5 text-gray-400 hover:text-blue-400" />
-                </a> */}
                 <a href="https://www.instagram.com/precision.to/" className="glass-card p-2 rounded-full hover:bg-white/10 transition-all">
                   <Instagram className="w-5 h-5 text-gray-400 hover:text-blue-400" />
                 </a>
               </div>
             </div>
 
-            {/* Product */}
+            {/* Main */}
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-white">Main</h4>
               <ul className="space-y-3">
                 {[
                   { text: 'Home', path: '/' },
-                  { text: 'Past Work', path: '/work' }
+                  { text: 'Past Work', path: '/past-work' }
                 ].map(({ text, path }) => (
                   <li key={text}>
                     <a href={path} className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -567,7 +628,6 @@ export default function Home() {
               <ul className="space-y-3">
                 {[
                   { text: 'About Us', path: '/about' },
-                  { text: 'Careers', path: '/careers' },
                   { text: 'Contact', path: '/contact' }
                 ].map(({ text, path }) => (
                   <li key={text}>
@@ -578,14 +638,32 @@ export default function Home() {
                 ))}
               </ul>
             </div>
+
+            {/* Contact Info */}
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold text-white">Contact</h4>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-5 h-5 text-blue-400" />
+                  <span className="text-gray-400">Barrie, ON</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <MessageCircle className="w-5 h-5 text-blue-400" />
+                  <span className="text-gray-400">(249) 877-5640</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Mail className="w-5 h-5 text-blue-400" />
+                  <span className="text-gray-400">info@barriesdetailing.com</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-white/10">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-gray-400 text-sm">
-                © 2025
-                Precision Toronto. All rights reserved.
+                © 2025 Barrie&apos;s Mobile Detailing. All rights reserved.
               </p>
               <div className="flex gap-1">
                 {['Made By Web Boost Creations'].map((item) => (
