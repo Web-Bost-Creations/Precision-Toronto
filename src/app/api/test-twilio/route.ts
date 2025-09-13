@@ -37,8 +37,8 @@ export async function GET(_request: NextRequest) {
 
   } catch (error: unknown) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    const errorCode = (error as { code?: string })?.code || 'Unknown code';
-    const errorStatus = (error as { status?: string })?.status || 'Unknown status';
+    const errorCode = (error as { code?: string })?.code ?? 'Unknown code';
+    const errorStatus = (error as { status?: string })?.status ?? 'Unknown status';
 
     console.error('❌ Twilio test failed:', {
       error: errorMessage,

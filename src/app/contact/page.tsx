@@ -118,7 +118,7 @@ ${selectedServiceDetails.map(service =>
 Preferred Date: ${selectedDate}
 Preferred Time: ${selectedTime}
 
-Additional Notes: ${customerInfo.notes ?? 'None'}
+Additional Notes: ${customerInfo.notes || 'None'}
 
 Total Estimated Cost: $${getTotalPrice()}
       `;
@@ -178,8 +178,8 @@ Total Estimated Cost: $${getTotalPrice()}
         // Extract the first number from the price string
         const priceRegex = /\$?(\d+)/;
         const priceMatch = priceRegex.exec(service.price);
-        if (priceMatch) {
-          return total + parseInt(priceMatch[1] ?? '0');
+        if (priceMatch && priceMatch[1]) {
+          return total + parseInt(priceMatch[1], 10);
         }
       }
       return total;
