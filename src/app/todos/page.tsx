@@ -28,11 +28,18 @@ export default function TodosPage() {
     const savedTodos = localStorage.getItem('todos');
     if (savedTodos) {
       try {
-        const parsedTodos = JSON.parse(savedTodos).map((todo: any) => ({
+        const parsedTodos = JSON.parse(savedTodos) as Array<{
+          id: string;
+          text: string;
+          completed: boolean;
+          createdAt: string;
+          priority: 'low' | 'medium' | 'high';
+        }>;
+        const todosWithDates = parsedTodos.map((todo) => ({
           ...todo,
           createdAt: new Date(todo.createdAt)
         }));
-        setTodos(parsedTodos);
+        setTodos(todosWithDates);
       } catch (error) {
         console.error('Error loading todos:', error);
       }
