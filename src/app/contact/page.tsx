@@ -143,7 +143,7 @@ Total Estimated Cost: $${getTotalPrice()}
         statusText: response.statusText 
       });
 
-      const responseData = await response.json();
+      const responseData = await response.json() as { success?: boolean; error?: string };
       console.log('📋 Response Data:', responseData);
 
       if (response.ok) {
@@ -178,8 +178,9 @@ Total Estimated Cost: $${getTotalPrice()}
         // Extract the first number from the price string
         const priceRegex = /\$?(\d+)/;
         const priceMatch = priceRegex.exec(service.price);
-        if (priceMatch && priceMatch[1]) {
-          return total + parseInt(priceMatch[1], 10);
+        const priceValue = priceMatch?.[1];
+        if (priceValue) {
+          return total + parseInt(priceValue, 10);
         }
       }
       return total;
