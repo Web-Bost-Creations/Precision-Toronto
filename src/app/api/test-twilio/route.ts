@@ -1,7 +1,8 @@
-import { NextRequest, NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 import twilio from 'twilio';
 
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     // Twilio credentials
     const TWILIO_ACCOUNT_SID = 'ACaef508e458bf85c64f959dec9adc2d55';
@@ -34,17 +35,21 @@ export async function GET(request: NextRequest) {
       status: testMessage.status
     });
 
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    const errorCode = (error as { code?: string })?.code || 'Unknown code';
+    const errorStatus = (error as { status?: string })?.status || 'Unknown status';
+
     console.error('❌ Twilio test failed:', {
-      error: error.message,
-      code: error.code,
-      status: error.status
+      error: errorMessage,
+      code: errorCode,
+      status: errorStatus
     });
 
     return NextResponse.json({
       success: false,
-      error: error.message,
-      code: error.code
+      error: errorMessage,
+      code: errorCode
     }, { status: 500 });
   }
 }

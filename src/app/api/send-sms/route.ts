@@ -51,13 +51,18 @@ export async function POST(request: NextRequest) {
         messageId: twilioMessage.sid,
         status: twilioMessage.status
       });
-    } catch (twilioError: any) {
+    } catch (twilioError: unknown) {
       // Log the actual error for debugging
+      const errorMessage = twilioError instanceof Error ? twilioError.message : 'Unknown error';
+      const errorCode = (twilioError as { code?: string })?.code ?? 'Unknown code';
+      const errorStatus = (twilioError as { status?: string })?.status ?? 'Unknown status';
+      const moreInfo = (twilioError as { moreInfo?: string })?.moreInfo ?? 'No additional info';
+
       console.error('❌ Twilio Error:', {
-        error: twilioError?.message || 'Unknown error',
-        code: twilioError?.code || 'Unknown code',
-        status: twilioError?.status || 'Unknown status',
-        moreInfo: twilioError?.moreInfo || 'No additional info'
+        error: errorMessage,
+        code: errorCode,
+        status: errorStatus,
+        moreInfo: moreInfo
       });
 
       // Fallback if Twilio fails
@@ -70,7 +75,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ 
         success: false, 
         message: 'SMS failed to send. Check console for details.',
-        error: twilioError?.message || 'Unknown error',
+        error: errorMessage,
         fallback: true
       });
     }

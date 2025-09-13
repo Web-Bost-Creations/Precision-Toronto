@@ -118,7 +118,7 @@ ${selectedServiceDetails.map(service =>
 Preferred Date: ${selectedDate}
 Preferred Time: ${selectedTime}
 
-Additional Notes: ${customerInfo.notes || 'None'}
+Additional Notes: ${customerInfo.notes ?? 'None'}
 
 Total Estimated Cost: $${getTotalPrice()}
       `;
@@ -176,9 +176,10 @@ Total Estimated Cost: $${getTotalPrice()}
       const service = services.find(s => s.id === serviceId);
       if (service) {
         // Extract the first number from the price string
-        const priceMatch = service.price.match(/\$?(\d+)/);
+        const priceRegex = /\$?(\d+)/;
+        const priceMatch = priceRegex.exec(service.price);
         if (priceMatch) {
-          return total + parseInt(priceMatch[1] || '0');
+          return total + parseInt(priceMatch[1] ?? '0');
         }
       }
       return total;
