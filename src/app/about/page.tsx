@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Clock, Shield, Star, Users, Award, CheckCircle, Car, MapPin, MessageCircle, Mail, Instagram, Wrench, Heart, Zap } from 'lucide-react';
+import { ArrowRight, CheckCircle, MapPin, MessageCircle, Mail, Instagram, } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';

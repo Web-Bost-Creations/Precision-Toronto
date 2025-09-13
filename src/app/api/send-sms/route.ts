@@ -1,9 +1,23 @@
-import { NextRequest, NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 import twilio from 'twilio';
+
+interface RequestBody {
+  message: string;
+  phoneNumber: string;
+}
+
+interface TwilioError {
+  message: string;
+  code?: string;
+  status?: string;
+  moreInfo?: string;
+}
 
 export async function POST(request: NextRequest) {
   try {
-    const { message, phoneNumber } = await request.json();
+    const body: unknown = await request.json();
+    const { message, phoneNumber } = body as RequestBody;
 
     if (!message || !phoneNumber) {
       return NextResponse.json(
@@ -54,9 +68,10 @@ export async function POST(request: NextRequest) {
     } catch (twilioError: unknown) {
       // Log the actual error for debugging
       const errorMessage = twilioError instanceof Error ? twilioError.message : 'Unknown error';
-      const errorCode = (twilioError as { code?: string })?.code ?? 'Unknown code';
-      const errorStatus = (twilioError as { status?: string })?.status ?? 'Unknown status';
-      const moreInfo = (twilioError as { moreInfo?: string })?.moreInfo ?? 'No additional info';
+      const typedError = twilioError as TwilioError;
+      const errorCode = typedError.code ?? 'Unknown code';
+      const errorStatus = typedError.status ?? 'Unknown status';
+      const moreInfo = typedError.moreInfo ?? 'No additional info';
 
       console.error('❌ Twilio Error:', {
         error: errorMessage,
