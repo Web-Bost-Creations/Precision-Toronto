@@ -75,16 +75,22 @@ export default function TodosPage() {
 
   const addTodo = () => {
     if (newTodo.trim()) {
-      const todo: Todo = {
-        id: Date.now().toString(),
-        text: newTodo.trim(),
-        completed: false,
-        createdAt: new Date(),
-        priority
-      };
-      setTodos([todo, ...todos]);
-      setNewTodo('');
-      setPriority('medium');
+      // Split by comma and filter out empty strings
+      const todoTexts = newTodo.split(',').map(text => text.trim()).filter(text => text.length > 0);
+      
+      if (todoTexts.length > 0) {
+        const newTodos: Todo[] = todoTexts.map((text, index) => ({
+          id: (Date.now() + index).toString(), // Add index to ensure unique IDs
+          text: text,
+          completed: false,
+          createdAt: new Date(),
+          priority
+        }));
+        
+        setTodos([...newTodos, ...todos]);
+        setNewTodo('');
+        setPriority('medium');
+      }
     }
   };
 
@@ -273,7 +279,7 @@ export default function TodosPage() {
                 value={newTodo}
                 onChange={(e) => setNewTodo(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && addTodo()}
-                placeholder="What needs to be done?"
+                placeholder="What needs to be done? (Separate multiple items with commas)"
                 className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
             </div>
