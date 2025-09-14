@@ -113,8 +113,7 @@ export default function Home() {
               {[
                 { text: 'Home', path: '/' },
                 { text: 'About', path: '/about' },
-                { text: 'Past Work', path: '/past-work' },
-                { text: 'Todos', path: '/todos' }
+                { text: 'Past Work', path: '/past-work' }
               ].map((item) => (
                 <a
                   key={item.text}
@@ -159,8 +158,7 @@ export default function Home() {
               {[
                 { text: 'Home', path: '/' },
                 { text: 'About', path: '/about' },
-                { text: 'Past Work', path: '/past-work' },
-                { text: 'Todos', path: '/todos' }
+                { text: 'Past Work', path: '/past-work' }
               ].map((item) => (
                 <a
                   key={item.text}
@@ -610,8 +608,7 @@ export default function Home() {
               <ul className="space-y-3">
                 {[
                   { text: 'Home', path: '/' },
-                  { text: 'Past Work', path: '/past-work' },
-                  { text: 'Todos', path: '/todos' }
+                  { text: 'Past Work', path: '/past-work' }
                 ].map(({ text, path }) => (
                   <li key={text}>
                     <a href={path} className="text-gray-400 hover:text-blue-400 transition-colors">
