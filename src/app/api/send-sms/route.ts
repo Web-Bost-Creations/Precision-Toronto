@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
 
     // Twilio credentials - Replace with your actual credentials
     const TWILIO_ACCOUNT_SID = 'ACaef508e458bf85c64f959dec9adc2d55';
-    const TWILIO_AUTH_TOKEN = 'bb26e658a929d0f1063417ea0195d4e1';
+    const TWILIO_AUTH_TOKEN = '0fd8cb2e250ed4739617bb065a3da5ac';
     const TWILIO_PHONE_NUMBER = '+19063393548'; // Your Twilio phone number
     const BUSINESS_PHONE = '+12498775640'; // Your business phone number
 
