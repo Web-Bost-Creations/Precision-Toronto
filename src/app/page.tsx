@@ -355,10 +355,6 @@ export default function Home() {
               {
                 image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBkG2JUmOhbXj2h9HYNg5qBnt0My7p3wfuEovP",
                 alt: "Exterior Detailing"
-              },
-              {
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4k",
-                alt: "Wheel & Rim Services"
               }
             ].map((item, index) => (
               <div
