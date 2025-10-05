@@ -23,60 +23,60 @@ export default function PastWork() {
   const pastWork = [
     {
       id: 1,
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBftBh03Re6rCE2TIUZS0MliYq4dNk7LpOPKta",
-      service: "Window Tinting",
-      vehicle: "2020 BMW 3 Series",
-      description: "Professional ceramic window tinting with 20% all around"
+      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBawEV9ktN7I2ByenPltvUchGV8dmLfT6S0iCo",
+      service: "Full In & Out Detail",
+      vehicle: "2010 BMW 323i",
+      description: "Professional full in & out detail with ceramic coating"
     },
     {
       id: 2,
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKVMRy46tGmnr8f2YWqBMpNDPydLOTsa6lA9h",
-      service: "Paint Protection Film",
-      vehicle: "2022 Tesla Model 3",
-      description: "Full front end PPF installation with ceramic coating"
+      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4k",
+      service: "Engine Bay Cleaning",
+      vehicle: "2010 BMW 328i",
+      description: "Professional engine bay cleaning and protection"
     },
     {
       id: 3,
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB9PouO7DTer0bNstk4PB3vSCQWpUF6DXOly5M",
-      service: "Ceramic Coating",
-      vehicle: "2021 Audi A4",
-      description: "Premium ceramic coating with 5-year protection"
-    },
-    {
-      id: 4,
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBeewMma8cxHnX5dALMOzkyaNl73FqRPIgGErB",
-      service: "Interior Detailing",
-      vehicle: "2019 Mercedes C-Class",
-      description: "Complete interior deep clean and leather conditioning"
-    },
-    {
-      id: 5,
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdEe4VpkVQk2glCzju5GExv06fpAZOPi8coSY",
-      service: "Auto Detailing",
-      vehicle: "2020 Ford F-150",
-      description: "Full interior and exterior detailing package"
-    },
-    {
-      id: 6,
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB8gut7rI1vCAOKdVGZPecbrXpkIfHxNaUBS5t",
-      service: "Wheel & Rim Services",
-      vehicle: "2021 Lexus IS 350",
-      description: "Professional wheel cleaning and ceramic coating"
-    },
-    {
-      id: 7,
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKFoUSv6tGmnr8f2YWqBMpNDPydLOTsa6lA9h",
+      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBkG2JUmOhbXj2h9HYNg5qBnt0My7p3wfuEovP",
       service: "Full In & Out Detail",
-      vehicle: "2022 Honda Civic",
-      description: "Complete detailing with paint correction and protection"
+      vehicle: "2011 BMW 323i",
+      description: "Professional full in & out detail with ceramic coating"
     },
-    {
-      id: 8,
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBn9h0pG34lEbFrsUOipKXmYagnAjTIHGVzoPf",
-      service: "Ceramic Coating",
-      vehicle: "2020 Porsche 911",
-      description: "Premium ceramic coating with paint correction"
-    },
+    // {
+    //   id: 4,
+    //   image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBeewMma8cxHnX5dALMOzkyaNl73FqRPIgGErB",
+    //   service: "Interior Detailing",
+    //   vehicle: "2019 Mercedes C-Class",
+    //   description: "Complete interior deep clean and leather conditioning"
+    // },
+    // {
+    //   id: 5,
+    //   image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdEe4VpkVQk2glCzju5GExv06fpAZOPi8coSY",
+    //   service: "Auto Detailing",
+    //   vehicle: "2020 Ford F-150",
+    //   description: "Full interior and exterior detailing package"
+    // },
+    // {
+    //   id: 6,
+    //   image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB8gut7rI1vCAOKdVGZPecbrXpkIfHxNaUBS5t",
+    //   service: "Wheel & Rim Services",
+    //   vehicle: "2021 Lexus IS 350",
+    //   description: "Professional wheel cleaning and ceramic coating"
+    // },
+    // {
+    //   id: 7,
+    //   image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKFoUSv6tGmnr8f2YWqBMpNDPydLOTsa6lA9h",
+    //   service: "Full In & Out Detail",
+    //   vehicle: "2022 Honda Civic",
+    //   description: "Complete detailing with paint correction and protection"
+    // },
+    // {
+    //   id: 8,
+    //   image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBn9h0pG34lEbFrsUOipKXmYagnAjTIHGVzoPf",
+    //   service: "Ceramic Coating",
+    //   vehicle: "2020 Porsche 911",
+    //   description: "Premium ceramic coating with paint correction"
+    // },
     {
       id: 9,
       image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBbsRUCErBnqPsmHehvdjYMx21UD56TNfwtLFk",

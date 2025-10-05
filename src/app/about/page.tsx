@@ -57,13 +57,13 @@ export default function About() {
     {
       name: "Matt",
       role: "Founder & Lead Detailer",
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdnpX5TkVQk2glCzju5GExv06fpAZOPi8coSY",
+      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4khttps://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4k",
       description: "With over 5 years of experience in automotive detailing, Matt founded the company with a passion for perfection and customer satisfaction."
     },
     {
         name: "Lilly",
         role: "Co-Founder",
-        image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdnpX5TkVQk2glCzju5GExv06fpAZOPi8coSY",
+        image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4khttps://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4k",
         description: "With 1 year of experience in automotive detailing, Lilly founded the company with a passion for perfection and customer satisfaction."
       }
   ];
@@ -75,14 +75,14 @@ export default function About() {
       image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKFoUSv6tGmnr8f2YWqBMpNDPydLOTsa6lA9h"
     },
     {
-      title: "Ceramic Coating",
-      description: "Premium protection for your vehicle's paint",
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBn9h0pG34lEbFrsUOipKXmYagnAjTIHGVzoPf"
+      title: "Engine Bay Cleaning",
+      description: "Cleaning and protecting the engine bay of your vehicle",
+      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4k"
     },
     {
       title: "Monthly Maintenance Detail",
       description: "Deep cleaning and protection of all interior surfaces including leather conditioning, fabric protection, and dashboard restoration, every month.",
-      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB8gut7rI1vCAOKdVGZPecbrXpkIfHxNaUBS5t"
+      image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBawEV9ktN7I2ByenPltvUchGV8dmLfT6S0iCo"
     }
   ];
 
@@ -206,7 +206,7 @@ export default function About() {
             <div>
               <div className="relative">
                 <Image
-                  src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdnpX5TkVQk2glCzju5GExv06fpAZOPi8coSY"
+                  src="https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBzRsTkJgZA0ePlC8bz5gL7qIMUm6rGh9Ydywc"
                   alt="Barrie's Mobile Detailing Team"
                   className="w-full h-96 object-cover rounded-2xl"
                   width={600}

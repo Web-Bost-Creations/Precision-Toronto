@@ -12,7 +12,7 @@ const SERVICES = [
     id: 1,
     title: "Auto Detailing",
     description: "Complete interior and exterior detailing to restore your vehicle's showroom shine. Includes wash, wax, interior cleaning, and protection.",
-    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKFoUSv6tGmnr8f2YWqBMpNDPydLOTsa6lA9h",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBkG2JUmOhbXj2h9HYNg5qBnt0My7p3wfuEovP",
     price: "Starting at $150",
     features: ["Interior & Exterior", "Paint Protection", "Lifetime Warranty"],
     duration: "2-4 hours"
@@ -21,7 +21,7 @@ const SERVICES = [
     id: 2,
     title: "Interior Detailing",
     description: "Deep cleaning and protection of all interior surfaces including leather conditioning, fabric protection, and dashboard restoration.",
-    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBeewMma8cxHnX5dALMOzkyaNl73FqRPIgGErB",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB97zxlNTer0bNstk4PB3vSCQWpUF6DXOly5Mm",
     price: "Starting at $100",
     features: ["Leather Conditioning", "Fabric Protection", "Odor Elimination"],
     duration: "2-3 hours"
@@ -48,16 +48,16 @@ const SERVICES = [
     id: 5,
     title: "Monthly Maintenance Detail",
     description: "Deep cleaning and protection of all interior surfaces including leather conditioning, fabric protection, and dashboard restoration, every month.",
-    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBeewMma8cxHnX5dALMOzkyaNl73FqRPIgGErB",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBawEV9ktN7I2ByenPltvUchGV8dmLfT6S0iCo",
     price: "Starting at $100/month",
     features: ["Monthly Cleaning", "Odor Elimination", "Protection"],
     duration: "1-1 1/2 hour"
   },
   {
     id: 6,
-    title: "Wheel & Rim Services",
-    description: "Professional wheel cleaning, polishing, and protection services to keep your rims looking brand new and protected from brake dust.",
-    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB8gut7rI1vCAOKdVGZPecbrXpkIfHxNaUBS5t",
+    title: "Engine Bay Cleaning",
+    description: "Professional engine bay cleaning and protection",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4k",
     price: "Starting at $80",
     features: ["Deep Cleaning", "Polishing", "Protection Coating"],
     duration: "1-2 hours"
