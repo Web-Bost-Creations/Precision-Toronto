@@ -30,7 +30,7 @@ const SERVICES = [
     id: 3,
     title: "Full In & Out Detail",
     description: "Premium ceramic coating that provides long-lasting protection with incredible gloss and hydrophobic properties for your vehicle's paint.",
-    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBFnOx8fWzN0UrjP6i1WfwE7m5KBvb4gaYuAph",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBFnOx8fWzN0UrjP6i1WfwE7m5KBvb4gaYuAphz",
     price: "Starting at $200",
     features: ["5-Year Protection", "UV Resistance", "Easy Maintenance"],
     duration: "1-2 days"
@@ -337,27 +337,27 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {[
               {
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBftBh03Re6rCE2TIUZS0MliYq4dNk7LpOPKta",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBFnOx8fWzN0UrjP6i1WfwE7m5KBvb4gaYuAph",
                 alt: "Window Tinting"
               },
               {
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBKVMRy46tGmnr8f2YWqBMpNDPydLOTsa6lA9h",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB97zxlNTer0bNstk4PB3vSCQWpUF6DXOly5Mm",
                 alt: "Paint Protection Film"
               },
               {
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB9PouO7DTer0bNstk4PB3vSCQWpUF6DXOly5M",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4k",
                 alt: "Ceramic Coating"
               },
               {
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBeewMma8cxHnX5dALMOzkyaNl73FqRPIgGErB",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBawEV9ktN7I2ByenPltvUchGV8dmLfT6S0iCo",
                 alt: "Interior Detailing"
               },
               {
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBdEe4VpkVQk2glCzju5GExv06fpAZOPi8coSY",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBkG2JUmOhbXj2h9HYNg5qBnt0My7p3wfuEovP",
                 alt: "Exterior Detailing"
               },
               {
-                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXB8gut7rI1vCAOKdVGZPecbrXpkIfHxNaUBS5t",
+                image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBYHumfJEUecCrRFngPKQVDHWdSOozI3yX9x4k",
                 alt: "Wheel & Rim Services"
               }
             ].map((item, index) => (
