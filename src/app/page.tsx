@@ -30,7 +30,7 @@ const SERVICES = [
     id: 3,
     title: "Full In & Out Detail",
     description: "Premium ceramic coating that provides long-lasting protection with incredible gloss and hydrophobic properties for your vehicle's paint.",
-    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBFnOx8fWzN0UrjP6i1WfwE7m5KBvb4gaYuAphz",
+    image: "https://o2ftva8bhe.ufs.sh/f/I9sqKqh18dXBzRsTkJgZA0ePlC8bz5gL7qIMUm6rGh9Ydywc",
     price: "Starting at $200",
     features: ["5-Year Protection", "UV Resistance", "Easy Maintenance"],
     duration: "1-2 days"
